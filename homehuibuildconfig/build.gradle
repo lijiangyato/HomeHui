@@ -1,0 +1,127 @@
+apply plugin: 'com.android.library'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        /*路由机制依赖库*/
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:support-v4:25.2.0'
+    compile 'com.android.support:support-v4:23.1.1'
+    testCompile 'junit:junit:4.12'
+
+    //oxffff：65536
+    compile 'com.android.support:multidex:1.0.1'
+    //路由机制依赖库
+    compile 'com.alibaba:arouter-api:1.2.1'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.1.2'
+    //适配器
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.21'
+    //底部导航栏
+    compile 'devlight.io:navigationtabbar:1.2.5'
+    //网络请求
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+    //Rxjava
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.2.0'
+    compile 'io.reactivex.rxjava2:rxjava:2.1.0'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    //okhttp
+    compile 'com.qianwen:okhttp-utils:3.8.0'
+    //gson数据解析
+    compile 'com.google.code.gson:gson:2.8.0'
+    //注解
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //实现滑动关闭当前Activity依赖库
+    compile 'cn.bingoogolapple:bga-swipebacklayout:1.0.8@aar'
+
+    //日志
+    compile 'com.github.zhaokaiqiang.klog:library:1.5.0'
+
+    //沉浸状态栏
+    compile 'com.jaeger.statusbaruitl:library:1.4.0'
+    //勋章
+    compile 'q.rorbin:badgeview:1.1.3'
+    //eventbus
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //数据库依赖库*/
+    compile 'org.greenrobot:greendao:3.2.2'
+    //火锅刷新
+    compile 'com.github.Yalantis:pull-to-make-soup:1.0.2'
+    //加载动画
+    compile 'com.tuyenmonkey:mkloader:1.4.0'
+    //图片加载处理
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile files('libs/nineoldandroids-2.4.0.jar')
+    //图片圆型处理
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    //轮播图
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    //微信
+    compile 'com.getbase:floatingactionbutton:1.10.1'
+    //悬浮视图
+    compile 'com.hulab.android:debugkit:1.1.0'
+
+    //3D地图
+    //compile 'com.amap.api:3dmap:latest.integration'
+    //2D地图
+    compile 'com.amap.api:map2d:latest.integration'
+    //导航
+    // compile 'com.amap.api:navi-3dmap:latest.integration'
+    //搜索
+    compile 'com.amap.api:search:latest.integration'
+    //定位
+    compile 'com.amap.api:location:latest.integration'
+    //选项卡
+
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    //购物车动画
+    compile 'com.github.paradoxie:ShopAnimDemo:0.1'
+    //弹出提示框
+    compile 'com.github.michaelye.easydialog:easydialog:1.4'
+    //弹出提示框
+    compile 'com.github.javiersantos:MaterialStyledDialogs:2.1'
+    //greenDao框架
+    compile 'org.greenrobot:greendao:3.2.0'
+    //数据库调试
+    compile 'com.idescout.sql:sqlscout-server:2.0'
+    //购物车弹出框
+    compile 'com.flipboard:bottomsheet-commons:1.5.2'
+
+}

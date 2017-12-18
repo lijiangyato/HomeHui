@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ings.gogo.homehuiui.homehuibase.view.impl.MainActivityView">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/name_horizontal_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <devlight.io.library.ntb.NavigationTabBar
+        android:id="@+id/name_TabBar_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        app:ntb_active_color="#fda700"
+        app:ntb_scaled="false"
+        app:ntb_bg_color="@color/colorFragmenBackground"
+        app:ntb_icon_size_fraction="0.4"
+        app:ntb_inactive_color="#969f96"
+        app:ntb_title_mode="all"
+        app:ntb_title_size="@dimen/sp_14"
+        app:ntb_titled="true" />
+
+</LinearLayout>

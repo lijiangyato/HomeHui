@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeefef"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/name_toolbar_id"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#fda700"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#eeefef"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:gravity="center|left"
+            android:text="联系人" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#fdfdfd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="12dp"
+            android:gravity="center|left"
+            android:text="姓名："
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/name_surname_id"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:textSize="13dp"
+            android:gravity="center|left"
+            android:hint="请输入姓名" />
+
+        <ImageView
+            android:id="@+id/name_Mailist_id"
+            android:layout_width="30dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="4dp"
+            android:src="@color/debug_kit_background" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginRight="25dp"
+        android:background="#eeefef" />
+
+    <LinearLayout
+        android:background="#fdfdfd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+     android:gravity="center"
+        >
+
+        <RadioGroup
+            android:id="@+id/unlogin_label_view"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fadingEdge="none"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/name_Man_id"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="17dp"
+
+                android:background="@drawable/female_backeip"
+                android:button="@null"
+                android:gravity="center"
+                android:text="先生"
+                android:textColor="#808080"
+                android:textSize="17.0sp" />
+            <RadioButton
+                android:id="@+id/name_female_id"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/female_backeip"
+                android:button="@null"
+                android:gravity="center"
+                android:text="女士"
+                android:textColor="#808080"
+                android:textSize="17.0sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="25dp"
+        android:background="#eeefef" />
+
+    <LinearLayout
+        android:background="#fdfdfd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center|"
+            android:gravity="center|left"
+            android:layout_marginLeft="12dp"
+            android:text="手机:"
+            android:textColor="#828282" />
+
+        <EditText
+            android:maxLength="11"
+            android:numeric="integer"
+            android:textSize="13dp"
+            android:id="@+id/name_number_id"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@null"
+          android:layout_marginRight="20dp"
+            android:gravity="center|left"
+            android:hint="请输入手机码"
+            android:textColor="#828282" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+
+            android:id="@+id/name_adddizi"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:gravity="center|left"
+            android:text="请填写地址" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:background="#fdfdfd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:text="小区/大厦/学校:"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/name_Icon_id"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_location" />
+
+        <TextView
+            android:id="@+id/name_click_id"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:textSize="13dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center|left"
+            android:hint="点击选择" />
+
+        <ImageView
+            android:id="@+id/name_Returndianj_id"
+            android:layout_width="30dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="4dp"
+            android:src="@color/debug_kit_background" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#eeefef" />
+    <LinearLayout
+        android:background="#fdfdfd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="12dp"
+            android:gravity="center|left"
+            android:text="楼号/门牌号"
+            android:textSize="14dp" />
+
+
+        <EditText
+            android:id="@+id/name_mapview_id"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:textSize="13dp"
+            android:gravity="center|left"
+            android:hint="例：2号楼房" />
+
+        <ImageView
+            android:id="@+id/name_Return_id"
+            android:layout_width="30dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="4dp"
+            android:src="@color/debug_kit_background" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/name_login_id"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#fda700"
+            android:elevation="10dp"
+            android:text="保存"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

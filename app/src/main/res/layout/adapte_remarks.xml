@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fdfdfd"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/name_method_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical|left"
+                android:text="支付方式"
+                android:textColor="#ff22"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/name_onlinepayment_id"
+                android:gravity="center"
+               android:text="在线支付"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/ic_launcher" />
+
+        </TableRow>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/name_remarks_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical|left"
+                android:text="备注"
+                android:textColor="#ff22"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/name_return_id"
+                android:src="@drawable/ic_launcher"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="12dp"/>
+
+        </TableRow>
+    </LinearLayout>
+</LinearLayout>

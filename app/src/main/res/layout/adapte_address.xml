@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fdfdfd"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/name_Newlyadded_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/iocn_jiake" />
+
+            <TextView
+                android:id="@+id/name_Harvest_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical|left"
+                android:text="新增收货地址"
+                android:textColor="#ff22"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="35px"
+                android:layout_height="35px"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/iocn_click" />
+
+        </TableRow>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginLeft="12dp"
+        android:background="#f6f6f6"
+        android:layout_marginRight="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:id="@+id/name_time_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_launcher"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+
+                android:id="@+id/name_timeinterval_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical|left"
+                android:text="设置收货时段"
+                android:textColor="#ff22"
+                android:textSize="16sp" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:src="@drawable/iocn_click"
+                android:layout_width="35px"
+                android:layout_height="35px"
+                android:layout_marginRight="12dp"
+                />
+
+        </TableRow>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

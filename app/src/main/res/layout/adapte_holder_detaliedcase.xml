@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fdfdfd"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/name_icongtimg_id"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <TextView
+        android:background="#f0f0f1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:id="@+id/namei_timai_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="红烧肉"
+                android:textColor="#ff0000" />
+
+            <TextView
+                android:id="@+id/name_thedishes_id"
+                android:layout_marginLeft="6dp"
+
+                android:textSize="@dimen/sp_12"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="米饭"
+                android:gravity="center|left"
+                android:textColor="#b5b5b5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/name_unitPrice_id"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="0"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="15.2元"
+                    android:textSize="20dp"
+                    android:textColor="#fca600" />
+                <LinearLayout
+                    android:layout_marginRight="6dp"
+                    android:gravity="center|right"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/name_reduce_id"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/iocn_jianw" />
+
+                    <TextView
+                        android:id="@+id/name_number_id"
+                        android:gravity="center"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="0"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:id="@+id/name_plus_id"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/icon_jia" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

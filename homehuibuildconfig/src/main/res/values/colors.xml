@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#eda3a5</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--主题配色-->
+    <color name="Indigo_colorPrimaryDark">#e7dddd</color>
+    <color name="Indigo_colorPrimary">#ffffff</color>
+    <color name="Indigo_nav_color">#ffc400</color>
+    <color name="Indigo_navor">#ffffff</color>
+
+    <color name="colorFragmenBackground">#efeff4</color>
+
+    <color name="color_type_info">#fda700</color>
+
+
+    <color name="color1">#e9e0db</color>
+    <color name="color_code">#a0a0a0</color>
+</resources>

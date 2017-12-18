@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="#fdfdfd"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:src="@drawable/icon_locationgk"
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+        <TextView
+            android:textSize="14dp"
+            android:gravity="center|left"
+            android:id="@+id/name_company_id"
+
+            android:text="公司名称"
+            android:layout_width="match_parent"
+            android:layout_height="26dp" />
+
+        <TextView
+            android:textSize="14dp"
+            android:gravity="center|left"
+            android:id="@+id/name_place_id"
+            android:textColor="#778899"
+
+            android:text="获取地点名称"
+            android:layout_width="match_parent"
+            android:layout_height="26dp" />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

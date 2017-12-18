@@ -1,0 +1,17 @@
+<resources>
+    <string-array name="homehui">
+        <item>#333333</item>
+        <item>#333333</item>
+        <item>#333333</item>
+        <item>#333333</item>
+        <item>#694031</item>
+        <item>#ecc414</item>
+    </string-array>
+
+    <string-array name="titles">
+        <item>今天</item>
+        <item>明天</item>
+        <item>后天</item>
+        <item>外天</item>
+    </string-array>
+</resources>

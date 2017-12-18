@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f1"
+    android:id="@+id/Layout_laoli0"
+    android:orientation="vertical">
+
+
+    <com.flipboard.bottomsheet.BottomSheetLayout
+        android:id="@+id/name_bottomsheetlayot_id"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+
+        android:layout_width="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/name_Location_id"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#fd8300"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginLeft="6dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/iocn_locationg" />
+
+                <TextView
+                    android:id="@+id/name_placename_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="太升国家"
+                    android:textSize="14dp" />
+            </LinearLayout>
+            <com.yalantis.pulltomakesoup.PullToRefreshView
+                android:id="@+id/name_shuxiang_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:type="soup">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/name_FoodRecycler_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:fadingEdge="none" />
+            </com.yalantis.pulltomakesoup.PullToRefreshView>
+        </LinearLayout>
+
+    </com.flipboard.bottomsheet.BottomSheetLayout>
+
+    <RelativeLayout xmlns:card_view="http://schemas.android.com/tools"
+        android:id="@+id/card_share_view"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:foreground="?attr/selectableItemBackground">
+
+
+        <LinearLayout
+            android:id="@+id/shopping_cart_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="#fdbc0a"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:id="@+id/name_shoppingCart_id"
+                android:layout_width="240dp"
+                android:layout_height="55dp"
+                android:background="#000000"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/name_Sum_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="100dp"
+                    android:text="0$"
+                    android:textColor="#f22"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/name_payment_id"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#fda700"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/name_Checkout_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="去结账"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/name_shopping_cart_layout"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/ic_iconyuan"
+
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp">
+            <ImageView
+                android:id="@+id/name_food_id"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_iconshopping"/>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

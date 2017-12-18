@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/name_click_id"
+            android:layout_marginLeft="4dp"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:gravity="center|left"
+            android:text="楼号/门牌号"
+            android:textSize="14dp" />
+
+
+
+        <EditText
+            android:id="@+id/name_mapview_id"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center|left"
+            android:hint="例：2号楼房" />
+
+        <ImageView
+            android:id="@+id/name_Return_id"
+            android:layout_marginRight="4dp"
+            android:layout_width="30dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:src="@color/debug_kit_background" />
+    </LinearLayout>
+
+
+</LinearLayout>

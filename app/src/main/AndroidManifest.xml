@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ings.gogo">
+
+
+    <application
+        android:name=".homehuiui.Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemep">
+        <!--高德地图所需要的配置文档:包名：Key-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="93a3e34dd6be8787c369d2fe36ea5f41"/>
+        <service android:name="com.amap.api.location.APSService"></service>
+        <!--路由机制-->
+        <activity android:name=".homehuiui.homehuibase.view.impl.SchemeFilterActivityView">
+
+            <!-- Schame -->
+            <intent-filter>
+                <data
+                    android:host="m.erayic.com"
+                    android:scheme="arouter" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <!-- App Links -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="m.erayic.com"
+                    android:scheme="http" />
+                <data
+                    android:host="m.erayic.com"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+
+
+        <!--<activity android:name=".homehuiui.homehuiaddress.view.impl.SaveAddressActivityView"
+            android:launchMode="standard"
+            >-->
+        <!--地图-->
+
+
+        <!--首页-->
+        <activity android:name=".homehuiui.homehuibase.view.impl.MainActivityView"
+            android:launchMode="standard"
+            >
+
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--版本更新-->
+        <activity android:name=".homehuiui.homehuiupdate.view.impl.UpdateActivityView">
+
+
+
+        </activity>
+        <!--注册!手机验证码-->
+        <activity android:name=".homehuiui.homehuiindex.view.impl.RegisterActivityView">
+
+        </activity>
+        <!--设置密码-->
+      <activity android:name=".homehuiui.homehuiindex.view.impl.ResetActivityView">
+
+      </activity>
+
+        <!--重置密码-->
+        <activity android:name=".homehuiui.homehuiindex.view.impl.PasswordActiviView">
+
+        </activity>
+       <!-- 地址页面-->
+
+        <activity android:name=".homehuiui.homehuiaddress.view.impl.AddressActivityView">
+        </activity>
+
+
+
+        <!--地图-->
+        <activity android:name=".homehuiui.homehuiaddress.view.impl.MapActivityView">
+
+        </activity>
+
+        <!--待付款-->
+        <activity android:name=".homehuiui.homehuiupdate.view.impl.BepaidActivityView">
+
+        </activity>
+
+        <!--待配送-->
+        <activity android:name=".homehuiui.homehuiupdate.view.impl.DistributionActivityView">
+
+        </activity>
+        <!--待评价-->
+        <activity android:name=".homehuiui.homehuiupdate.view.impl.EvaluateActivityView">
+
+        </activity>
+        <!--我的积分-->
+        <activity android:name=".homehuiui.homehuiupdate.view.impl.IntegralActivityView">
+
+        </activity>
+        <!--推荐好友-->
+        <activity android:name=".homehuiui.homehuiupdate.view.impl.RecommendActivityVview">
+
+        </activity>
+        <!--购买积分记录-->
+        <activity android:name=".homehuiui.homehuiupdate.view.impl.RecordActivityView">
+
+        </activity>
+        <!--地址-->
+        <activity android:name=".homehuiui.homehuiaddress.view.impl.SaveAddressActivityView">
+
+        </activity>
+
+        <!--支付-->
+        <activity android:name=".homehuiui.homehuifood.view.impl.PaymentActivityView">
+
+        </activity>
+
+        <!--详情-->
+        <activity android:name=".homehuiui.homehuifood.view.impl.ShareActivityView">
+
+        </activity>
+
+
+    </application>
+
+</manifest>
